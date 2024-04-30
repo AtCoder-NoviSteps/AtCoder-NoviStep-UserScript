@@ -17,7 +17,6 @@ function getSubmissionId() {
 
 function getUserId() {
   const userUrl = document.querySelector("#main-container > div.row > div:nth-child(2) > div:nth-child(8) > table > tbody > tr:nth-child(3) > td > a")
-  //window.alert(userId);
   let userArray =   String(userUrl).split('/');
   let userId = userArray[userArray.length - 1]
   return userId;
@@ -26,7 +25,6 @@ function getUserId() {
 
 function getTaskId() {
   const taskUrl = document.querySelector("#main-container > div.row > div:nth-child(2) > div:nth-child(8) > table > tbody > tr:nth-child(2) > td > a")
-  //window.alert(taskUrl);
   let taskArray =   String(taskUrl).split('/');
   let taskId =  taskArray[taskArray.length - 1];
   return taskId;
@@ -42,5 +40,5 @@ $('#novi-link').click(function() {
     let submissionId = getSubmissionId();
     let taskId = getTaskId();
     let userId = getUserId();
-    window.open("http://127.0.0.1:4173/problems/"+taskId+"?submissionId="+submissionId+"&userId="+userId);
+    window.open("https://atcoder-novisteps.vercel.app/problems/"+taskId+"?submissionId="+submissionId+"&userId="+userId);
 })
