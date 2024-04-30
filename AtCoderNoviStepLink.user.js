@@ -4,6 +4,9 @@
 // @author       Miyuki Kondo
 // @match        https://atcoder.jp/contests/*/submissions/*
 // @exclude     https://atcoder.jp/contests/*/submissions/me
+// @updateURL	https://github.com/AtCoder-NoviSteps/AtCoder-NoviStep-UserScript/raw/main/AtCoderNoviStepLink.user.js
+// @downloadURL   https://github.com/AtCoder-NoviSteps/AtCoder-NoviStep-UserScript/raw/main/AtCoderNoviStepLink.user.js
+// @supportURL   https://github.com/AtCoder-NoviSteps
 // @grant        none
 // @description  AtCoderの提出ページにAtCoderNovistepへ遷移できる出来るボタンを設置します。
 // ==/UserScript==
