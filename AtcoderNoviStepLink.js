@@ -32,7 +32,7 @@ function getTaskId() {
 
 $('#contest-nav-tabs').append(`<div>
     <div id="novi-link" class="row">
-      <button id="novistep" type="button" class="btn btn-info">Novi!</button>
+      <button id="novistep" type="button" class="btn btn-success">Novi!</button>
     </div>
 </div>`);
 
