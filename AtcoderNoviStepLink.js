@@ -2,7 +2,7 @@
 // @name         AtCoderNoviStepLink
 // @version      0.9
 // @author       Miyuki Kondo
-// @include        https://atcoder.jp/contests/*/submissions/*
+// @match        https://atcoder.jp/contests/*/submissions/*
 // @exclude     https://atcoder.jp/contests/*/submissions/me
 // @grant        none
 // @description  AtCoderの提出ページにAtCoderNovistepへ遷移できる出来るボタンを設置します。
@@ -10,14 +10,14 @@
 
 function getSubmissionId() {
   let submissionURL = location.href;
-  let submissionArray =   submissionURL.split('/');
-  let submissionId =  submissionArray[submissionArray.length - 1];
+  let submissionArray = submissionURL.split('/');
+  let submissionId = submissionArray[submissionArray.length - 1];
   return submissionId;
 }
 
 function getUserId() {
   const userUrl = document.querySelector("#main-container > div.row > div:nth-child(2) > div:nth-child(8) > table > tbody > tr:nth-child(3) > td > a")
-  let userArray =   String(userUrl).split('/');
+  let userArray = String(userUrl).split('/');
   let userId = userArray[userArray.length - 1]
   return userId;
 }
@@ -25,8 +25,8 @@ function getUserId() {
 
 function getTaskId() {
   const taskUrl = document.querySelector("#main-container > div.row > div:nth-child(2) > div:nth-child(8) > table > tbody > tr:nth-child(2) > td > a")
-  let taskArray =   String(taskUrl).split('/');
-  let taskId =  taskArray[taskArray.length - 1];
+  let taskArray = String(taskUrl).split('/');
+  let taskId = taskArray[taskArray.length - 1];
   return taskId;
 }
 
