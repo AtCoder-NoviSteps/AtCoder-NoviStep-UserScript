@@ -43,5 +43,5 @@ $('#novi-link').click(function() {
     let submissionId = getSubmissionId();
     let taskId = getTaskId();
     let userId = getUserId();
-    window.open("https://atcoder-novisteps.vercel.app/problems/"+taskId+"?submissionId="+submissionId+"&userId="+userId);
+    window.open("https://atcoder-novisteps.vercel.app/problems/"+taskId);
 })
